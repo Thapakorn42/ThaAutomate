@@ -4,7 +4,6 @@ import { login,selectDepartmentAndWard } from "../support/login";
 describe('Validate  cortex',() => {
     beforeEach(() => {
         // ทำการ login ก่อนการทดสอบทุกครั้ง
-
         login('test-superadmin', '12345678');
         cy.url().should('include', '/select-ward');
     });
